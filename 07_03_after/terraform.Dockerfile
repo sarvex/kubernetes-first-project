@@ -1,4 +1,4 @@
-FROM carlosnunez/terraform:1.4.4 as terraform
+FROM carlosnunez/terraform:0.15.1 as terraform
 
 FROM amazon/aws-cli:2.16.8
 COPY --from=terraform /usr/local/bin/terraform /usr/local/bin/terraform
